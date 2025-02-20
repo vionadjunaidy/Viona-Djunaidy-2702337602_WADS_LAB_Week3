@@ -110,6 +110,29 @@ h1 {
     height: auto;
 }
 
+@media (max-width: 768px) { 
+    .open-house,
+    .career-support {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .career-support .title-pic {
+        text-align: center;
+    }
+
+    .title-pic,
+    .description {
+        width: 100%;
+    }
+
+    .open-house::after,
+    .career-support::after {
+        width: 80%;
+        height: 50px;
+    }
+}
+
 .custom-btn {
     background-color: white;
     border-color: rgb(141, 0, 23);
@@ -167,20 +190,13 @@ h1 {
     margin: 20px auto;
 }
 
-.col-md-3 {
-    position: relative;
+.desc {
+    background-color: #f4b400;
+    padding: 4px;
 }
 
-.col-md-3::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 306px;
-    height: 105px;
-    background-color: #f4b400;
-    z-index: -1;
+.col-md-3 {
+    position: relative;
 }
 
 .testimonial {
